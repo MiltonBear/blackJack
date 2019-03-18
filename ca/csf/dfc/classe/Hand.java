@@ -15,7 +15,16 @@ public class Hand {
 	public boolean continuer;
 	private boolean canPlay;
 	public int betAssociatdToHand;
+	public boolean isBusted;
 
+	public void isOvertwentyOne()
+	{
+		if(this.getHandValue()>21)
+		{
+		this.isBusted=true;
+		}
+	}
+	
 	public List<String> playerAction() {
 		this.m_Commands = new ArrayList<String>();
 		this.m_Commands.add("stop");

@@ -21,6 +21,10 @@ public class Player {
 	public void withDrawFromBankRoll(int p_Cash) {
 		this.m_BankRoll -= p_Cash;
 	}
+	public void addWinMoneyInBankRoll(int p_Cash)
+	{
+		this.m_BankRoll+=p_Cash;
+	}
 
 	public int getBankRoll() {
 		return this.m_BankRoll;
